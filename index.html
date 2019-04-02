@@ -2,13 +2,14 @@
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Simple Markers</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
-        height: 425px;
+      #map {width: 100%;
+        height: 100%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -21,6 +22,9 @@
   <body>
     <div id="map"></div>
     <script>//4.647686, -74.152026  https://www.google.com/maps?q=4.647686,-74.152026 tener encuenta //index.html?lat=4.647686&lng=-74.152026
+
+//en android https://colombiasoft.github.io/websitcar/?lat=4.647686&lng=-74.152026
+
 var latmapini=4.647686;
 var lngmapini=-74.152026;
       function initMap() {

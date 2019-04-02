@@ -8,8 +8,14 @@
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {width: 100%;
-        height: 100%;
+      #map {
+          
+          position: absolute;
+          top: 10%;
+          left: 0%;
+
+          width: 100%;
+        height: 95%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -17,16 +23,31 @@
         margin: 0;
         padding: 0;
       }
+
+      #idh3a{
+        position: absolute;
+          top: 0%;
+          left: 0%;
+color: black;
+background-color: aliceblue;
+      }
     </style>
   </head>
   <body>
-    <div id="map"></div>
+      <div id="todoa">
+
+        <h2 id="idh3a"></h2>
+            <div id="map"></div>
+
+
+      </div>
+
     <script>//4.647686, -74.152026  https://www.google.com/maps?q=4.647686,-74.152026 tener encuenta //index.html?lat=4.647686&lng=-74.152026
 
 //en android https://colombiasoft.github.io/websitcar/?lat=4.647686&lng=-74.152026
 
-var latmapini=4.647686;
-var lngmapini=-74.152026;
+var latmapini=0;
+var lngmapini=0;
       function initMap() {
         var myLatLng = {lat: latmapini, lng: lngmapini};
 
@@ -110,7 +131,11 @@ urllng=parseFloat(ast[2]);;
 console.log(window.location) ; 
 console.log( ast); 
 console.log(urllat+"    "+ urllng);
-  
+
+latmapini=urllat;
+ lngmapini=urllng;
+document.getElementById("idh3a").innerHTML="inicia "+urllat+"   "+ urllng;
+
 initMap();
     
 },500);

@@ -96,15 +96,26 @@ var urllng=0;
        return(false);
 }
 
+var st="";
+var ast=[];
 
-setTimeout(() => { try {
-    getquerylatlngVariable("lat");
-    initMap();
-} catch (error) {
-    
-}  
+setTimeout(() => { 
+   //getquerylatlngVariable("lat");
+   //initMap();
+
+   
+ast=String(window.location).split("=");
+urllat=parseFloat(ast[1]);
+urllng=parseFloat(ast[2]);;
+console.log(window.location) ; 
+console.log( ast); 
+console.log(urllat+"    "+ urllng);
+  
+initMap();
     
 },500);
+
+
 
 
 //index.html?lat=1&lng=2

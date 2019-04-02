@@ -124,17 +124,17 @@ setTimeout(() => {
    //getquerylatlngVariable("lat");
    //initMap();
 
-   
+   document.getElementById("idh3a").innerHTML=window.location;
 ast=String(window.location).split("=");
 urllat=parseFloat(ast[1]);
-urllng=parseFloat(ast[2]);;
+urllng=parseFloat(ast[2]);/*
 console.log(window.location) ; 
 console.log( ast); 
-console.log(urllat+"    "+ urllng);
+console.log(urllat+"    "+ urllng);*/
 
 latmapini=urllat;
  lngmapini=urllng;
-document.getElementById("idh3a").innerHTML="inicia "+urllat+"   "+ urllng;
+//ocument.getElementById("idh3a").innerHTML="inicia "+urllat+"   "+ urllng;
 
 initMap();
     

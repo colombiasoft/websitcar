@@ -124,7 +124,7 @@ setTimeout(() => {
    //getquerylatlngVariable("lat");
    //initMap();
 
-   document.getElementById("idh3a").innerHTML=window.location;
+  // document.getElementById("idh3a").innerHTML=window.location;
 ast=String(window.location).split("=");
 urllat=parseFloat(ast[1]);
 urllng=parseFloat(ast[2]);/*
@@ -151,7 +151,7 @@ Calling getquerylatlngVariable("id") - would return "1".
 Calling getquerylatlngVariable("image") - would return "awesome.jpg".
 
 */
-
+document.getElementById("idh3a").style.display="none";
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV4ya46Yoag-iGeJb5SUwZ2q1Irx0UjnU&callback=initMap2">
